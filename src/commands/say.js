@@ -5,7 +5,7 @@ module.exports = {
     name: 'say',
     description: 'Says a message that someone want to send',
     async execute(args, message){
-        const PREFIX = "zm.";
+        const PREFIX = "jb.";
         let sayMessage = message.content.split(`${PREFIX}say `).join("")
 
         await message.delete();

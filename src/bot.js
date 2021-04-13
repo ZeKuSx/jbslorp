@@ -26,8 +26,8 @@ const PREFIX = "jb.";
 
 
 client.on('ready', () =>{ 
-    console.log('ZeKuS Modification bot is now online!');
-    client.user.setActivity('ZeKuS Modification | ZM', {type: 'PLAYING'}).catch(console.error)});
+    console.log('JBSloRP bot is now online!');
+    client.user.setActivity('JBSloRP server comming soon', {type: 'PLAYING'}).catch(console.error)});
 
 
 
@@ -73,13 +73,15 @@ client.on('message', async message => {
     if(message.author.bot) return;
     if(message.channel.id === '831517304331173888')
 
+
             await message.delete();
 
-    if(message.content.toLowerCase() === 'bm.verify' && message.channel.id === '831517304331173888')
+    if(message.content.toLowerCase() === 'jb.verify' && message.channel.id === '831517304331173888')
     {
         await message.delete().catch(err => console.log(err));
         const role = message.guild.roles.cache.get('831409857709080576');
         if(role) {
+            console.log('before adding role')
             try{
             await message.member.roles.add(role);
 
